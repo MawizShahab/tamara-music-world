@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="view-transition" content="same-origin" />
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music World</title>
+    <link href="/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./custom.js"></script>
+  </head>
+
+  <body>
+    <div class="main-wrapper">
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a href="./index.html"
+              ><img src="./images/Union.svg" alt="union"
+            /></a>
+          </li>
+          <li class="active">
+            <div class="icon">
+              <img src="./images/icons/home.svg" alt="home" />
+            </div>
+            <a href="index.html" aria-current="page">Home</a>
+          </li>
+          <li>
+            <div class="icon">
+              <img src="./images/icons/search-normal.svg" alt="search" />
+            </div>
+            <a href="#">Search</a>
+          </li>
+          <li>
+            <div class="icon">
+              <img src="./images/icons/heart.svg" alt="heart" />
+            </div>
+
+            <a href="#">Notification</a>
+          </li>
+          <li>
+            <div class="icon">
+              <img src="./images/icons/profile-circle.svg" alt="Profile" />
+            </div>
+
+            <a href="#">Profile</a>
+          </li>
+        </ul>
+        <ul class="nav-list">
+          <li>
+            <div class="icon">
+              <img src="./images/icons/setting.svg" alt="settings" />
+            </div>
+            <a href="#">Settings</a>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <section class="main-container-wrapper">
+          <div class="main-container">
+            <div class="homescreen-container">
+              <div class="main-title">
+                <h1 class="title">Tamara Miller’s World</h1>
+              </div>
+
+              <div class="homepage-tabs">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="tab1-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#tab1"
+                      type="button"
+                      role="tab"
+                      aria-controls="tab1"
+                      aria-selected="false"
+                      tabindex="-1"
+                    >
+                      Home
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="tab2-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#tab2"
+                      type="button"
+                      role="tab"
+                      aria-controls="tab2"
+                      aria-selected="true"
+                    >
+                      Feed
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="tab3-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#tab3"
+                      type="button"
+                      role="tab"
+                      aria-controls="tab3"
+                      aria-selected="false"
+                      tabindex="-1"
+                    >
+                      Suggestions
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="homepage-tabs-content" id="homepageTabContent">
+                <div
+                  class="tab-pane fade active show"
+                  id="tab1"
+                  role="tabpanel"
+                  aria-labelledby="tab1-tab"
+                >
+                  <div class="singers-container-wrapper">
+                    <div class="singers-container">
+                      <div class="singer one">
+                        <img
+                          src="./images/singers/the-kinks.svg"
+                          alt="the-kinks"
+                        />
+                        <span class="name">The Kinks</span>
+                      </div>
+                      <div class="singer two">
+                        <img src="./images/singers/bruce.svg" alt="bruce" />
+                        <span class="name">Bruce Springsteen</span>
+                      </div>
+                      <div class="singer three">
+                        <img src="./images/singers/lizo.svg" alt="lizzo" />
+                        <span class="name">lizzo</span>
+                      </div>
+                      <div class="singer four">
+                        <img
+                          src="./images/singers/greatful.svg"
+                          alt="greatful"
+                        />
+                        <span class="name">The Greatful Dead</span>
+                      </div>
+                      <div class="singer five">
+                        <img src="./images/singers/prince.svg" alt="prince" />
+                        <span class="name">Prince</span>
+                      </div>
+                      <div class="singer six">
+                        <img src="./images/singers/donna.svg" alt="donna" />
+                        <span class="name">Donna Summer</span>
+                      </div>
+                      <div class="singer seven">
+                        <img src="./images/singers/fiona.svg" alt="fiona" />
+                        <span class="name">Fiona Apple</span>
+                      </div>
+                      <div class="singer eight">
+                        <img
+                          src="./images/singers/florence.svg"
+                          alt="Florence"
+                        />
+                        <span class="name">Florence & The Ma...</span>
+                      </div>
+                      <div class="singer nine">
+                        <img src="./images/singers/arcade.svg" alt="arcade" />
+                        <span class="name">Arcade Fire</span>
+                      </div>
+                      <!-- <div class="singer ten">
+                      <img src="./images/singers/foo.svg" alt="Foo" />
+                      <span class="name">Foo Fighters</span>
+                    </div> -->
+                    </div>
+                  </div>
+                  <div class="flip-container">
+                    <a href="#">
+                      <img src="./images/icons/flip.svg" alt="flip" />
+                      <span>Flip</span>
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="tab2"
+                  role="tabpanel"
+                  aria-labelledby="tab2-tab"
+                ></div>
+                <div
+                  class="tab-pane fade"
+                  id="tab3"
+                  role="tabpanel"
+                  aria-labelledby="tab3-tab"
+                >
+                  <div class="suggestion-listing-container">
+                    <div class="suggestion-listing">
+                      <a href="#">
+                        <div class="listing">
+                          <div class="listing-details-container">
+                            <div class="listing-hero">
+                              <img
+                                src="./images/listing/listing1.svg"
+                                alt="lisitng-hero"
+                              />
+                            </div>
+                            <div class="listing-details">
+                              <div class="listing-label">
+                                <p>Because you follow Prince</p>
+                              </div>
+                              <div class="listing-crew"><p>Vanity 6</p></div>
+                            </div>
+                          </div>
+                          <div class="listing-chevron">
+                            <img
+                              src="./images/icons/lsiting-chevron.svg"
+                              alt="listing-chevron"
+                            />
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="listing">
+                          <div class="listing-details-container">
+                            <div class="listing-hero">
+                              <img
+                                src="./images/listing/listing2.svg"
+                                alt="lisitng-hero"
+                              />
+                            </div>
+                            <div class="listing-details">
+                              <div class="listing-label">
+                                <p>Because you follow Neil Young</p>
+                              </div>
+                              <div class="listing-crew"><p>Sunny War</p></div>
+                            </div>
+                          </div>
+                          <div class="listing-chevron">
+                            <img
+                              src="./images/icons/lsiting-chevron.svg"
+                              alt="listing-chevron"
+                            />
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="listing">
+                          <div class="listing-details-container">
+                            <div class="listing-hero">
+                              <img
+                                src="./images/listing/listing3.svg"
+                                alt="lisitng-hero"
+                              />
+                            </div>
+                            <div class="listing-details">
+                              <div class="listing-label">
+                                <p>Because you follow Ashford & Sim...</p>
+                              </div>
+                              <div class="listing-crew">
+                                <p>Joy Oladokum</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="listing-chevron">
+                            <img
+                              src="./images/icons/lsiting-chevron.svg"
+                              alt="listing-chevron"
+                            />
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="listing">
+                          <div class="listing-details-container">
+                            <div class="listing-hero">
+                              <img
+                                src="./images/listing/listing4.svg"
+                                alt="lisitng-hero"
+                              />
+                            </div>
+                            <div class="listing-details">
+                              <div class="listing-label">
+                                <p>Because you follow Fiona Apple</p>
+                              </div>
+                              <div class="listing-crew"><p>Tori Amos</p></div>
+                            </div>
+                          </div>
+                          <div class="listing-chevron">
+                            <img
+                              src="./images/icons/lsiting-chevron.svg"
+                              alt="listing-chevron"
+                            />
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="listing">
+                          <div class="listing-details-container">
+                            <div class="listing-hero">
+                              <img
+                                src="./images/listing/listing5.svg"
+                                alt="lisitng-hero"
+                              />
+                            </div>
+                            <div class="listing-details">
+                              <div class="listing-label">
+                                <p>Because you follow Prince</p>
+                              </div>
+                              <div class="listing-crew">
+                                <p>Donna Summer</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="listing-chevron">
+                            <img
+                              src="./images/icons/lsiting-chevron.svg"
+                              alt="listing-chevron"
+                            />
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="listing">
+                          <div class="listing-details-container">
+                            <div class="listing-hero">
+                              <img
+                                src="./images/listing/listing6.svg"
+                                alt="lisitng-hero"
+                              />
+                            </div>
+                            <div class="listing-details">
+                              <div class="listing-label">
+                                <p>Because you follow Aretha Franklin</p>
+                              </div>
+                              <div class="listing-crew">
+                                <p>Groove Theory</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="listing-chevron">
+                            <img
+                              src="./images/icons/lsiting-chevron.svg"
+                              alt="listing-chevron"
+                            />
+                          </div>
+                        </div>
+                      </a>
+                      <a href="#">
+                        <div class="listing">
+                          <div class="listing-details-container">
+                            <div class="listing-hero">
+                              <img
+                                src="./images/listing/listing7.svg"
+                                alt="lisitng-hero"
+                              />
+                            </div>
+                            <div class="listing-details">
+                              <div class="listing-label">
+                                <p>Because you follow The Kinks</p>
+                              </div>
+                              <div class="listing-crew">
+                                <p>Siouxsie Sioux & The Banshees</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="listing-chevron">
+                            <img
+                              src="./images/icons/lsiting-chevron.svg"
+                              alt="listing-chevron"
+                            />
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

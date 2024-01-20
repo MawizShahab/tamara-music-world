@@ -1,0 +1,463 @@
+:root {
+  --body-bg: #123;
+  --nav-bg: #234;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif !important;
+  margin: 0;
+  background-image: url(./images/home-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-inline-start: 12rem;
+  color: white;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.rm-pd {
+  padding: 0;
+}
+
+.rm-mg {
+  margin: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.main-wrapper {
+  display: flex;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #63697e;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.nav-list a {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.nav-list li {
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  margin-inline: 0rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+
+.nav-list li.active {
+  position: relative;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+.homescreen-container {
+  padding: 50px 25px 0 25px;
+}
+
+.title {
+  color: #f6f5ff;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
+.homescreen-container {
+  padding: 60px 25px 0 25px;
+}
+
+.homepage-tabs {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav.nav-tabs {
+  border-radius: 32px;
+  background: #323a4c;
+
+  padding: 4px;
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+  width: 100%;
+  max-width: 459px;
+  padding: 5px;
+  /* height: 54px; */
+}
+
+.nav-link.active {
+  color: #23213b !important;
+  text-align: center;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: 20px;
+  letter-spacing: -0.3px;
+  border-radius: 70px !important;
+  background: #fff !important;
+  /* width: 200px; */
+  padding: 14px 36px !important;
+}
+
+.nav-link {
+  color: #f6f5ff !important;
+  text-align: center;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  /* width: 200px; */
+  padding: 14px 36px;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border-color: #323a4c !important;
+  outline: 0 !important;
+}
+
+div#homepageTabContent {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding-top: 25px;
+  position: relative;
+}
+.singers-container {
+  /* margin-top: 35px; */
+  position: relative;
+}
+
+.singer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  max-width: 68px;
+  position: relative;
+}
+
+.singer img {
+  width: 100%;
+}
+
+.singer .name {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+div#tab1 {
+  position: fixed;
+  width: 100%;
+  max-width: 1150px;
+  overflow: hidden;
+}
+
+/* .singer.one {
+  top: 80px;
+  left: -295px;
+}
+
+.singer.two {
+  top: -50px;
+  right: -580px;
+}
+
+.singer.three {
+  top: 50px;
+  left: 560px;
+}
+
+.singer.four {
+  top: -145px;
+  left: 130px;
+}
+
+.singer.five {
+  top: -40px;
+  left: -245px;
+}
+
+.singer.six {
+  top: 0px;
+  left: 400px;
+}
+
+.singer.seven {
+  top: -60px;
+  left: 200px;
+}
+
+.singer.eight {
+  top: -55px;
+  left: -140px;
+}
+
+.singer.nine {
+  top: -175px;
+  left: 710px;
+} */
+
+/* .singer.ten {
+  top: -180px;
+  left: 250px;
+} */
+
+.singer.one {
+  top: 5px;
+  left: 185px;
+}
+
+.singer.two {
+  top: -90px;
+  right: -905px;
+}
+
+.singer.three {
+  top: 50px;
+  left: 700px;
+}
+
+.singer.four {
+  top: -165px;
+  left: 260px;
+}
+
+.singer.five {
+  top: -90px;
+  right: -348px;
+}
+
+.singer.six {
+  top: -285px;
+  left: 510px;
+}
+
+.singer.seven {
+  top: -560px;
+  left: 726px;
+}
+
+.singer.eight {
+  top: -440px;
+  left: 140px;
+}
+
+.singer.nine {
+  top: -550px;
+  left: 925px;
+}
+
+.flip-container {
+  padding: 10px 24px;
+  border-radius: 60px;
+  background: var(--Turquise, #6BD0FC);
+  width: 142px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 53%;
+  left: 45%;
+}
+.flip-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.flip-container span {
+  color: #1d1e3e;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.3px;
+}
+
+/* listing screen */
+
+div#tab3 {
+  width: 100%;
+  max-width: 1024px;
+}
+
+.listing-label p {
+  color: var(--Dark-30, #8b96b3);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.listing-crew p {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.suggestion-listing .listing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-top: 1px solid #323a4c;
+}
+
+.listing-details-container {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.listing-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Favourite Artist Screen */
+
+.suggestion-text {
+  margin: 50px;
+}
+
+.suggestion-text p {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.search-artisit-container-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.search-artist-container {
+  width: 100%;
+  max-width: 702px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.search-box input {
+  outline: 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #3e4b66;
+  width: 100%;
+  padding: 15px 0;
+  color: var(--White, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.search-listing-container {
+  border-radius: 12px;
+  background: #3e4b66;
+}
+
+.search-listing {
+  padding: 20px 42px 20px 20px;
+  border-bottom: 1px solid #1f2940;
+}
+
+.search-listing.last {
+  border-bottom: 0 !important;
+}
+
+.artist {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.artist-details {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.artist-name p {
+  color: #fff;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 110% */
+}
+
+.close {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+}
