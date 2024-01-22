@@ -4,11 +4,12 @@ $(document).ready(function () {
     // Check if the active tab is the "Home" tab
     if (activeTabId === "tab1") {
       // Set the background image to './images/home-bg-2.png'
-      $("body").css("background-image", "url(./images/home-bg-2.png)");
+      $("body").css("background-image", "url(./images/home-bg-3.png)");
 
       // Add 100vh to .homepage-container
       $(".homescreen-container").css("height", "100vh");
       $(".homescreen-container").css("overflow", "hidden");
+      $("div#tab1").css("z-index", "11111");
     } else {
       // Set the background image to './images/home-bg.png' for other tabs
       $("body").css("background-image", "url(./images/home-bg.png)");
@@ -16,6 +17,7 @@ $(document).ready(function () {
       // Remove height property from .homepage-container
       $(".homescreen-container").css("height", "");
       $(".homescreen-container").css("overflow", "");
+      $("div#tab1").css("z-index", "0");
     }
   }
 
