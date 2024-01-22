@@ -203,6 +203,7 @@ div#tab1 {
   width: 100%;
   max-width: 1150px;
   overflow: hidden;
+  /* z-index: 11111; */
 }
 
 /* .singer.one {
@@ -329,6 +330,12 @@ div#tab1 {
   font-weight: 600;
   line-height: normal;
   letter-spacing: -0.3px;
+}
+
+.user-profile-container {
+  position: absolute;
+  top: 8%;
+  left: 45%;
 }
 
 /* listing screen */
